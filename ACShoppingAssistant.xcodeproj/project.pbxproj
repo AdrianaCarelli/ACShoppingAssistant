@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0B14E91C32A9940072203E /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B14E81C32A9940072203E /* ProductDetailViewController.swift */; };
+		3A452FE51C32DF8C00F09BEE /* NewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A452FE41C32DF8C00F09BEE /* NewProductViewController.swift */; };
 		3A999BF91C327DFF007AAE80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A999BF81C327DFF007AAE80 /* AppDelegate.swift */; };
 		3A999BFB1C327DFF007AAE80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A999BFA1C327DFF007AAE80 /* ViewController.swift */; };
 		3A999BFE1C327DFF007AAE80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A999BFC1C327DFF007AAE80 /* Main.storyboard */; };
 		3A999C011C327DFF007AAE80 /* ACShoppingAssistant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A999BFF1C327DFF007AAE80 /* ACShoppingAssistant.xcdatamodeld */; };
 		3A999C031C327DFF007AAE80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A999C021C327DFF007AAE80 /* Assets.xcassets */; };
 		3A999C061C327DFF007AAE80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A999C041C327DFF007AAE80 /* LaunchScreen.storyboard */; };
+		3A999C0F1C328C2D007AAE80 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A999C0D1C328C2D007AAE80 /* Product+CoreDataProperties.swift */; };
+		3A999C101C328C2D007AAE80 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A999C0E1C328C2D007AAE80 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A0B14E81C32A9940072203E /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		3A452FE41C32DF8C00F09BEE /* NewProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewProductViewController.swift; sourceTree = "<group>"; };
 		3A999BF51C327DFF007AAE80 /* ACShoppingAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACShoppingAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A999BF81C327DFF007AAE80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A999BFA1C327DFF007AAE80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		3A999C021C327DFF007AAE80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A999C051C327DFF007AAE80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A999C071C327DFF007AAE80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A999C0D1C328C2D007AAE80 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Product+CoreDataProperties.swift"; path = "../Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3A999C0E1C328C2D007AAE80 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = ../Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A0B14E71C32A94A0072203E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3A999BFA1C327DFF007AAE80 /* ViewController.swift */,
+				3A0B14E81C32A9940072203E /* ProductDetailViewController.swift */,
+				3A452FE41C32DF8C00F09BEE /* NewProductViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		3A999BEC1C327DFE007AAE80 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +74,10 @@
 		3A999BF71C327DFF007AAE80 /* ACShoppingAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				3A0B14E71C32A94A0072203E /* ViewController */,
 				3A999BF81C327DFF007AAE80 /* AppDelegate.swift */,
-				3A999BFA1C327DFF007AAE80 /* ViewController.swift */,
+				3A999C0D1C328C2D007AAE80 /* Product+CoreDataProperties.swift */,
+				3A999C0E1C328C2D007AAE80 /* Product.swift */,
 				3A999BFC1C327DFF007AAE80 /* Main.storyboard */,
 				3A999C021C327DFF007AAE80 /* Assets.xcassets */,
 				3A999C041C327DFF007AAE80 /* LaunchScreen.storyboard */,
@@ -140,7 +160,11 @@
 			files = (
 				3A999BFB1C327DFF007AAE80 /* ViewController.swift in Sources */,
 				3A999C011C327DFF007AAE80 /* ACShoppingAssistant.xcdatamodeld in Sources */,
+				3A999C101C328C2D007AAE80 /* Product.swift in Sources */,
+				3A999C0F1C328C2D007AAE80 /* Product+CoreDataProperties.swift in Sources */,
+				3A452FE51C32DF8C00F09BEE /* NewProductViewController.swift in Sources */,
 				3A999BF91C327DFF007AAE80 /* AppDelegate.swift in Sources */,
+				3A0B14E91C32A9940072203E /* ProductDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +226,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -241,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,6 +314,7 @@
 				3A999C0C1C327DFF007AAE80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
