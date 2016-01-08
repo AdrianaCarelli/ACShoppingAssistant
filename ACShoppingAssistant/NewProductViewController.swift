@@ -45,7 +45,8 @@ class NewProductViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
-        <#code#>
+        picker .dismissViewControllerAnimated(true, completion: nil)
+        imageView.image=info[UIImagePickerControllerOriginalImage] as? UIImage
     }
     
 
